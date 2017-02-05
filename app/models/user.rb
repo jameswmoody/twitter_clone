@@ -33,4 +33,5 @@ class User < ApplicationRecord
     def forgot
       update_attribute(:remember_digest, nil)
     end
+  end
 end
