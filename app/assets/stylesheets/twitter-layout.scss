@@ -1,0 +1,205 @@
+// Colors
+
+$blue-light: #55ACEE;
+$blue-very-light: #AFD9FA;
+$grey-light: #ccd6dd;
+$grey-very-light: #e1e8ed;
+$grey-dark: #66757f;
+
+// Navbar
+
+.navbar-inverse {
+  background-color: $blue-light;
+  border: $blue-light;
+  height: 80px;
+}
+.nav-button {
+  width: 120px;
+  height: 38px;
+  margin: 6px;
+  margin-top: 20px;
+  border-radius: 0;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5px;
+  &:hover {
+    background-color: rgba(255,255,255,1);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  &:focus {
+    background-color: rgba(255,255,255,1);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  transition: all 0.2s ease 0s;
+}
+.login-button {
+  background-color: rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.2s ease 0s;
+}
+.homepage-login-button {
+  display: none;
+}
+
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: Transparent;
+  color: $blue-light;
+}
+
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: Transparent;
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background-color: Transparent;
+  color: $blue-light;
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 8px;
+  width: 125px;
+  &:hover {
+    color: $blue-light;
+  }
+  transition: all 0.3s ease 0s;
+}
+.navbar-inverse .navbar-toggle {
+  border: none;
+  &:focus {
+    background-color: Transparent;
+  }
+}
+.fa {
+  display: none;
+}
+.toggle2 {
+  display: none;
+}
+.caret {
+  display: none;
+}
+
+
+// Jumbotron
+
+.homepage {
+  background-color: $grey-very-light;
+  height: 70vh;
+  width: 100%;
+}
+.btn-primary {
+  background-color: white;
+  border: none;
+  color: $blue-light;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 400;
+  &:hover {
+    background-color: $blue-light;
+  }
+  transition: all 0.2s ease 0s;
+}
+.tagline {
+  margin-top: 15%;
+}
+
+// Mobile
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .navbar-inverse {
+    background-color: white;
+    height: 28px;
+  }
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: $grey-dark;
+  }
+  .homepage {
+    background-color: $blue-light;
+    height: 88vh;
+  }
+  #logo {
+    content:url("http://jameswmoody.com/projects/twitter_clone/app/assets/images/twitpaw2.png");
+    width: 35px;
+  }
+  .navbar-toggle {
+    float: right;
+  }
+  .fa-search {
+    position: absolute;
+    right: 60px;
+    width: 40px;
+    margin-top: 16px;
+    color: $grey-dark;
+    display: inline-block;
+  }
+  .fa {
+    display: inline-block;
+  }
+  .toggle2 {
+    display: inline-block;;
+  }
+  .tagline {
+    color: white;
+    text-align: left;
+    font-family: 'Khula', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.001px;
+    margin-top: 45%;
+  }
+  h2 {
+    color: white;
+    text-align: left;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 0.05px;
+    a {
+      color: #AFD9FA;
+    }
+  }
+  .signup-button {
+    margin-top: 80px;
+    width: 180px;
+    height: 38px;
+    line-height: 110%;
+  }
+  .homepage-login-button {
+    display: inline-block;
+    margin-top: 10px;
+    width: 180px;
+    height: 38px;
+    line-height: 110%;
+    background-color: Transparent;
+    color: white;
+    border: 1px solid white;
+  }
+  .footer {
+    margin-top: 0;
+    a {
+      color: $grey-dark;
+    }
+  }
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 100vh;
+  }
+  .navbar-collapse {
+    border: none;
+    background-color: $blue-light;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+}
