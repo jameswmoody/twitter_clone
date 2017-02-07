@@ -100,7 +100,7 @@ $green-success: #5cb85c;
 
 .homepage {
   background-color: $grey-very-light;
-  height: 89vh;
+  height: 100vh;
   width: 100%;
 }
 .homepage-signup-button {
@@ -150,7 +150,7 @@ and (max-device-width : 667px) {
   }
   .homepage {
     background-color: $blue-light;
-    height: 88vh;
+    height: 100vh;
   }
   #logo {
     content:url("http://jameswmoody.com/projects/twitter_clone/app/assets/images/twitpaw2.png");
@@ -173,6 +173,11 @@ and (max-device-width : 667px) {
   .toggle2 {
     display: inline-block;;
   }
+  .alert {
+    margin-top: 50px;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
   .tagline {
     color: white;
     text-align: left;
@@ -181,6 +186,9 @@ and (max-device-width : 667px) {
     letter-spacing: 0.001px;
     margin-top: 30%;
   }
+  // h1 {
+  //   margin-top: 40px;
+  // }
   h2 {
     color: white;
     text-align: left;
