@@ -12,9 +12,9 @@
         <ul class="nav navbar-nav navbar-right">
           <%= link_to "X", root_path, class: "toggle2" %>
           <% if logged_in? %>
-            <li class="nav-button"><%= link_to "Users", users_path %></li>
+            <li class="nav-button toggle-link"><%= link_to "Users", users_path %></li>
           <% else %>
-            <li class="nav-button"><%= link_to "Sign up", signup_path %></li>
+            <li class="nav-button toggle-link"><%= link_to "Sign up", signup_path %></li>
           <% end %>
           <% if logged_in? %>
             <li class="nav-button dropdown">

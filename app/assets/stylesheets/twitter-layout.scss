@@ -139,8 +139,11 @@ $green-success: #5cb85c;
 // Mobile
 
 @media only screen
-and (min-device-width : 375px)
+and (min-device-width : 320px)
 and (max-device-width : 667px) {
+  .row {
+    margin: 0;
+  }
   .navbar-inverse {
     background-color: white;
     height: 28px;
@@ -171,7 +174,22 @@ and (max-device-width : 667px) {
     display: inline-block;
   }
   .toggle2 {
-    display: inline-block;;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    display: inline-block;
+    margin-left: 20px;
+    text-align: center;
+  }
+  .login-button {
+    background-color: Transparent;
+    border: none;
+  }
+  .toggle-link {
+    border: none;
+  }
+  .nav > li {
+    margin: auto;
   }
   .alert {
     margin-top: 50px;
@@ -241,5 +259,11 @@ and (max-device-width : 667px) {
     top: 0;
     left: 0;
     display: none;
+  }
+  // Forms
+
+  form {
+    width: 80%;
+    margin: 0 auto;
   }
 }
